@@ -1,0 +1,7 @@
+A test app to show a monkey patch on a model will persist in dev mode on multiple refreshes, troubleshooting this not happening in one of our apps.
+
+rake db:create
+rake db:migrate
+rails s
+http://localhost:3000/monkeys # should say monkey monkey monkey
+refresh, patch in initializers/patch.rb still works
